@@ -55,7 +55,7 @@ export const Gallery: React.FC = () => {
       <PageHeader 
         title="Galeri Kegiatan" 
         subtitle="Kumpulan dokumentasi momen-momen berharga dan aktivitas seru di SD Negeri Mekarsari."
-        background="bg-secondary"
+        background="bg-primary"
       />
 
       <section className="py-16 bg-surface min-h-screen">
@@ -158,4 +158,5 @@ export const Gallery: React.FC = () => {
     </div>
   );
 };
+
 

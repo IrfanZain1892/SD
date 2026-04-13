@@ -64,11 +64,11 @@ export const Profile: React.FC = () => {
       <PageHeader 
         title="Profil Sekolah" 
         subtitle="Mengenal lebih dekat SD Negeri Mekarsari, sejarah, visi misi, dan fasilitas kami."
-        background="gradient-hero"
+        background="gradient-hero bg-primary"
       />
 
       {/* Sejarah Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center mb-16">
             <Badge className="bg-primary/10 text-primary border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -159,7 +159,7 @@ export const Profile: React.FC = () => {
       </section>
 
       {/* Struktur Organisasi */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-secondary/10 text-secondary border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -228,7 +228,7 @@ export const Profile: React.FC = () => {
       </section>
 
       {/* Prestasi Section */}
-      <section id="prestasi" className="py-24 bg-white">
+      <section id="prestasi" className="py-24 bg-surface">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-primary/10 text-primary border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -269,3 +269,5 @@ export const Profile: React.FC = () => {
     </div>
   );
 };
+
+
