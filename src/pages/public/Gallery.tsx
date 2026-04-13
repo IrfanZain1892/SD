@@ -58,7 +58,7 @@ export const Gallery: React.FC = () => {
         background="bg-secondary"
       />
 
-      <section className="py-16 bg-white min-h-screen">
+      <section className="py-16 bg-surface min-h-screen">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="Semua" className="w-full" onValueChange={setActiveTab}>
             <div className="flex justify-center mb-12">
@@ -158,3 +158,4 @@ export const Gallery: React.FC = () => {
     </div>
   );
 };
+

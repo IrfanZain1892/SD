@@ -40,7 +40,7 @@ export const Navbar: React.FC = () => {
         </Link>
       </div>
 
-      <nav className={`transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
+      <nav className={`transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md py-3' : 'bg-primary py-5'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
@@ -146,3 +146,4 @@ export const Navbar: React.FC = () => {
     </header>
   );
 };
+
