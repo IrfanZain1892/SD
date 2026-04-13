@@ -1,5 +1,3 @@
-"use client"
-
 import * as React from "react"
 import { Dialog as SheetPrimitive } from "@base-ui/react/dialog"
 
@@ -11,37 +9,11 @@ function Sheet({ ...props }: SheetPrimitive.Root.Props) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />
 }
 
-function SheetTrigger({
-  asChild,
-  ...props
-}: SheetPrimitive.Trigger.Props & { asChild?: boolean }) {
-  if (asChild) {
-    return (
-      <SheetPrimitive.Trigger
-        data-slot="sheet-trigger"
-        {...props}
-        render={props.children as React.ReactElement}
-        children={null}
-      />
-    )
-  }
+function SheetTrigger({ ...props }: SheetPrimitive.Trigger.Props) {
   return <SheetPrimitive.Trigger data-slot="sheet-trigger" {...props} />
 }
 
-function SheetClose({
-  asChild,
-  ...props
-}: SheetPrimitive.Close.Props & { asChild?: boolean }) {
-  if (asChild) {
-    return (
-      <SheetPrimitive.Close
-        data-slot="sheet-close"
-        {...props}
-        render={props.children as React.ReactElement}
-        children={null}
-      />
-    )
-  }
+function SheetClose({ ...props }: SheetPrimitive.Close.Props) {
   return <SheetPrimitive.Close data-slot="sheet-close" {...props} />
 }
 
