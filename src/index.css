@@ -91,7 +91,7 @@
 :root {
     --background: #F0F4FF;
     --foreground: #1A237E;
-    --card: #FFFFFF;
+    --card: #DBEAFE;
     --card-foreground: #1A237E;
     --popover: #FFFFFF;
     --popover-foreground: #1A237E;
@@ -172,5 +172,6 @@
 section { background-color: #F0F4FF !important; }
 section.bg-white { background-color: #F0F4FF !important; }
 .bg-white:not(nav):not(header):not(.card):not([class*='card']):not(button):not([class*='btn']) { background-color: #F0F4FF !important; }
+
 
 
