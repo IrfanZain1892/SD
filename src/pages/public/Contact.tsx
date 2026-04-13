@@ -79,7 +79,7 @@ export const Contact: React.FC = () => {
         background="bg-primary-dark"
       />
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
             {contactInfo.map((item, idx) => (
@@ -250,3 +250,4 @@ export const Contact: React.FC = () => {
     </div>
   );
 };
+

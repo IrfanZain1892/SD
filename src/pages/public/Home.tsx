@@ -132,7 +132,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             <StatCounter icon={<GraduationCap />} end={312} label="Siswa Aktif" />
@@ -276,7 +276,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Extracurricular Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <Badge className="bg-accent/10 text-accent border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -405,3 +405,4 @@ export const Home: React.FC = () => {
     </div>
   );
 };
+

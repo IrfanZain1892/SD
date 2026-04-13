@@ -105,7 +105,7 @@ export const PPDB: React.FC = () => {
       />
 
       {/* Hero Stats */}
-      <section className="py-12 bg-white border-b border-surface">
+      <section className="py-12 bg-surface border-b border-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-surface p-6 rounded-3xl flex items-center space-x-4">
@@ -169,7 +169,7 @@ export const PPDB: React.FC = () => {
       </section>
 
       {/* Main Content: Form or Success */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="container mx-auto px-4 max-w-4xl">
           {!isSubmitted ? (
             <div className="space-y-12">
@@ -430,7 +430,7 @@ export const PPDB: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-16">
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
@@ -457,3 +457,4 @@ export const PPDB: React.FC = () => {
     </div>
   );
 };
+
