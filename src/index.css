@@ -168,3 +168,8 @@
     color: var(--foreground);
   }
 }
+/* Force background semua section halaman publik */
+section { background-color: #F0F4FF !important; }
+section.bg-white { background-color: #F0F4FF !important; }
+.bg-white:not(nav):not(header):not(.card):not([class*='card']):not(button):not([class*='btn']) { background-color: #F0F4FF !important; }
+
