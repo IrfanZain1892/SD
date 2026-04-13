@@ -7,10 +7,11 @@ export const PublicLayout: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-[88px]">
         <Outlet />
       </main>
       <Footer />
     </div>
   );
 };
+
