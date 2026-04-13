@@ -175,3 +175,7 @@ section.bg-white { background-color: #F0F4FF !important; }
 
 
 
+
+html, body { background-color: #F0F4FF !important; }
+main > div > section, main section { background-color: #F0F4FF !important; }
+

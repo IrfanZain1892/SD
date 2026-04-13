@@ -105,10 +105,10 @@ export const PPDB: React.FC = () => {
       />
 
       {/* Hero Stats */}
-      <section className="py-12 bg-surface border-b border-surface">
+      <section className="py-12 bg-[#F0F4FF] border-b border-surface">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-surface p-6 rounded-3xl flex items-center space-x-4">
+            <div className="bg-[#F0F4FF] p-6 rounded-3xl flex items-center space-x-4">
               <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center text-primary">
                 <Users className="w-6 h-6" />
               </div>
@@ -117,7 +117,7 @@ export const PPDB: React.FC = () => {
                 <div className="text-xs text-text-muted font-ui uppercase tracking-wider">Kuota Tersedia</div>
               </div>
             </div>
-            <div className="bg-surface p-6 rounded-3xl flex items-center space-x-4">
+            <div className="bg-[#F0F4FF] p-6 rounded-3xl flex items-center space-x-4">
               <div className="w-12 h-12 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
@@ -126,7 +126,7 @@ export const PPDB: React.FC = () => {
                 <div className="text-xs text-text-muted font-ui uppercase tracking-wider">Terdaftar</div>
               </div>
             </div>
-            <div className="bg-surface p-6 rounded-3xl flex items-center space-x-4">
+            <div className="bg-[#F0F4FF] p-6 rounded-3xl flex items-center space-x-4">
               <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent">
                 <AlertCircle className="w-6 h-6" />
               </div>
@@ -140,7 +140,7 @@ export const PPDB: React.FC = () => {
       </section>
 
       {/* Alur Pendaftaran */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-heading font-extrabold text-text-primary mb-4">Alur Pendaftaran</h2>
@@ -156,7 +156,7 @@ export const PPDB: React.FC = () => {
               { step: 4, title: "Pengumuman", desc: "27 Juni 2025" },
               { step: 5, title: "Daftar Ulang", desc: "30 Juni–5 Juli 2025" }
             ].map((item, idx) => (
-              <div key={idx} className="bg-surface p-6 rounded-3xl text-center shadow-sm border border-transparent hover:border-primary/20 transition-all">
+              <div key={idx} className="bg-[#F0F4FF] p-6 rounded-3xl text-center shadow-sm border border-transparent hover:border-primary/20 transition-all">
                 <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-heading font-bold">
                   {item.step}
                 </div>
@@ -169,12 +169,12 @@ export const PPDB: React.FC = () => {
       </section>
 
       {/* Main Content: Form or Success */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4 max-w-4xl">
           {!isSubmitted ? (
             <div className="space-y-12">
               <div className="flex justify-between items-center mb-12 relative">
-                <div className="absolute top-1/2 left-0 right-0 h-1 bg-surface -z-10" />
+                <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#F0F4FF] -z-10" />
                 {[1, 2, 3, 4].map((s) => (
                   <div 
                     key={s} 
@@ -301,7 +301,7 @@ export const PPDB: React.FC = () => {
 
                     {step === 4 && (
                       <div className="space-y-8">
-                        <div className="bg-surface p-6 rounded-3xl">
+                        <div className="bg-[#F0F4FF] p-6 rounded-3xl">
                           <h4 className="font-heading font-bold text-primary mb-4 flex items-center">
                             <User className="w-4 h-4 mr-2" />
                             Data Calon Siswa
@@ -312,7 +312,7 @@ export const PPDB: React.FC = () => {
                             <div><span className="text-text-muted">TTL:</span> <p className="font-bold">{getValues('tempatLahir')}, {getValues('tanggalLahir')}</p></div>
                           </div>
                         </div>
-                        <div className="bg-surface p-6 rounded-3xl">
+                        <div className="bg-[#F0F4FF] p-6 rounded-3xl">
                           <h4 className="font-heading font-bold text-primary mb-4 flex items-center">
                             <Users className="w-4 h-4 mr-2" />
                             Data Orang Tua
@@ -369,7 +369,7 @@ export const PPDB: React.FC = () => {
               <p className="text-text-muted font-ui mb-8 max-w-md mx-auto">
                 Terima kasih telah mendaftar. Silakan simpan nomor registrasi Anda untuk pengecekan status secara berkala.
               </p>
-              <div className="bg-surface p-8 rounded-[32px] border-2 border-dashed border-primary/20 mb-10 inline-block">
+              <div className="bg-[#F0F4FF] p-8 rounded-[32px] border-2 border-dashed border-primary/20 mb-10 inline-block">
                 <span className="text-xs text-text-muted font-ui uppercase tracking-widest block mb-2">Nomor Registrasi Anda</span>
                 <span className="text-4xl font-heading font-black text-primary tracking-tighter">{regNumber}</span>
               </div>
@@ -385,7 +385,7 @@ export const PPDB: React.FC = () => {
       </section>
 
       {/* Cek Status Section */}
-      <section id="status" className="py-24 bg-surface">
+      <section id="status" className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4 max-w-2xl">
           <Card className="border-none shadow-xl rounded-[40px] overflow-hidden">
             <CardHeader className="p-8 text-center">
@@ -430,7 +430,7 @@ export const PPDB: React.FC = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="text-center mb-16">
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
@@ -457,5 +457,6 @@ export const PPDB: React.FC = () => {
     </div>
   );
 };
+
 
 

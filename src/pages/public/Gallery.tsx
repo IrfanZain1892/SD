@@ -58,11 +58,11 @@ export const Gallery: React.FC = () => {
         background="bg-primary"
       />
 
-      <section className="py-16 bg-surface min-h-screen">
+      <section className="py-16 bg-[#F0F4FF] min-h-screen">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="Semua" className="w-full" onValueChange={setActiveTab}>
             <div className="flex justify-center mb-12">
-              <TabsList className="bg-surface p-1 rounded-2xl flex flex-wrap h-auto justify-center">
+              <TabsList className="bg-[#F0F4FF] p-1 rounded-2xl flex flex-wrap h-auto justify-center">
                 {albums.map(album => (
                   <TabsTrigger 
                     key={album} 
@@ -93,7 +93,7 @@ export const Gallery: React.FC = () => {
                     </div>
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <Badge className="mb-2 bg-surface/20 text-white border-none text-[10px]">{photo.category}</Badge>
+                      <Badge className="mb-2 bg-[#F0F4FF]/20 text-white border-none text-[10px]">{photo.category}</Badge>
                       <h4 className="text-white font-heading font-bold text-sm leading-tight">{photo.label}</h4>
                     </div>
                   </motion.div>
@@ -158,6 +158,7 @@ export const Gallery: React.FC = () => {
     </div>
   );
 };
+
 
 
 

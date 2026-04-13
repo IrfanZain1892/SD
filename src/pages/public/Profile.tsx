@@ -68,7 +68,7 @@ export const Profile: React.FC = () => {
       />
 
       {/* Sejarah Section */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center mb-16">
             <Badge className="bg-primary/10 text-primary border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -82,7 +82,7 @@ export const Profile: React.FC = () => {
 
           <div className="relative max-w-4xl mx-auto">
             {/* Timeline Line */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-surface hidden md:block" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-[#F0F4FF] hidden md:block" />
             
             <div className="space-y-12">
               {milestones.map((item, idx) => (
@@ -115,14 +115,14 @@ export const Profile: React.FC = () => {
       </section>
 
       {/* Visi Misi Section */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-surface p-10 rounded-[40px] shadow-xl"
+              className="bg-[#F0F4FF] p-10 rounded-[40px] shadow-xl"
             >
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8">
                 <Eye className="w-8 h-8" />
@@ -139,14 +139,14 @@ export const Profile: React.FC = () => {
               viewport={{ once: true }}
               className="bg-primary p-10 rounded-[40px] shadow-xl text-white"
             >
-              <div className="w-16 h-16 bg-surface/20 rounded-2xl flex items-center justify-center text-white mb-8">
+              <div className="w-16 h-16 bg-[#F0F4FF]/20 rounded-2xl flex items-center justify-center text-white mb-8">
                 <Target className="w-8 h-8" />
               </div>
               <h2 className="text-3xl font-heading font-extrabold mb-6">Misi Kami</h2>
               <ul className="space-y-4">
                 {misi.map((item, idx) => (
                   <li key={idx} className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-surface/20 flex items-center justify-center shrink-0 mr-3 mt-1">
+                    <div className="w-6 h-6 rounded-full bg-[#F0F4FF]/20 flex items-center justify-center shrink-0 mr-3 mt-1">
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <span className="font-ui font-medium">{item}</span>
@@ -159,7 +159,7 @@ export const Profile: React.FC = () => {
       </section>
 
       {/* Struktur Organisasi */}
-      <section className="py-24 bg-surface">
+      <section className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-secondary/10 text-secondary border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -173,7 +173,7 @@ export const Profile: React.FC = () => {
             <div className="mb-12">
               <div className="bg-primary p-6 rounded-3xl text-white text-center shadow-xl w-64 transform hover:scale-105 transition-transform">
                 <Avatar className="w-20 h-20 mx-auto mb-4 border-4 border-white/20">
-                  <AvatarFallback className="bg-surface text-primary font-bold text-xl">MS</AvatarFallback>
+                  <AvatarFallback className="bg-[#F0F4FF] text-primary font-bold text-xl">MS</AvatarFallback>
                 </Avatar>
                 <h4 className="font-heading font-bold text-lg leading-tight">{struktur[0].name}</h4>
                 <p className="text-xs font-ui opacity-80 uppercase tracking-widest mt-1">{struktur[0].role}</p>
@@ -181,12 +181,12 @@ export const Profile: React.FC = () => {
             </div>
 
             {/* Connecting Line */}
-            <div className="w-1 h-12 bg-surface mb-12" />
+            <div className="w-1 h-12 bg-[#F0F4FF] mb-12" />
 
             {/* Other Staff */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
               {struktur.slice(1).map((staff, idx) => (
-                <div key={idx} className="bg-surface border border-surface p-6 rounded-3xl text-center shadow-md hover:shadow-xl transition-all group">
+                <div key={idx} className="bg-[#F0F4FF] border border-surface p-6 rounded-3xl text-center shadow-md hover:shadow-xl transition-all group">
                   <Avatar className="w-16 h-16 mx-auto mb-4 border-2 border-surface group-hover:border-primary transition-colors">
                     <AvatarFallback className={`${staff.color} text-white font-bold`}>
                       {staff.name.substring(0, 2).toUpperCase()}
@@ -202,7 +202,7 @@ export const Profile: React.FC = () => {
       </section>
 
       {/* Fasilitas Section */}
-      <section id="fasilitas" className="py-24 bg-surface">
+      <section id="fasilitas" className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-accent/10 text-accent border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -215,7 +215,7 @@ export const Profile: React.FC = () => {
             {fasilitas.map((item, idx) => (
               <Card key={idx} className="border-none shadow-md rounded-3xl hover:shadow-xl transition-all group">
                 <CardContent className="p-8 flex flex-col items-center text-center">
-                  <div className="w-14 h-14 bg-surface rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                  <div className="w-14 h-14 bg-[#F0F4FF] rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
                     {React.cloneElement(item.icon as React.ReactElement, { className: "w-7 h-7" })}
                   </div>
                   <h4 className="font-heading font-bold text-text-primary mb-2">{item.name}</h4>
@@ -228,7 +228,7 @@ export const Profile: React.FC = () => {
       </section>
 
       {/* Prestasi Section */}
-      <section id="prestasi" className="py-24 bg-surface">
+      <section id="prestasi" className="py-24 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <Badge className="bg-primary/10 text-primary border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
@@ -239,7 +239,7 @@ export const Profile: React.FC = () => {
 
           <Tabs defaultValue="semua" className="w-full">
             <div className="flex justify-center mb-12">
-              <TabsList className="bg-surface p-1 rounded-2xl">
+              <TabsList className="bg-[#F0F4FF] p-1 rounded-2xl">
                 <TabsTrigger value="semua" className="rounded-xl px-6 font-ui font-bold">Semua</TabsTrigger>
                 <TabsTrigger value="akademik" className="rounded-xl px-6 font-ui font-bold">Akademik</TabsTrigger>
                 <TabsTrigger value="non-akademik" className="rounded-xl px-6 font-ui font-bold">Non-Akademik</TabsTrigger>
@@ -269,6 +269,7 @@ export const Profile: React.FC = () => {
     </div>
   );
 };
+
 
 
 

@@ -29,7 +29,7 @@ export const NewsDetail: React.FC = () => {
       <div className="h-[400px] md:h-[500px] w-full bg-gradient-to-br from-primary via-primary-dark to-secondary relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/40" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <Badge className="mb-6 bg-surface/20 text-white border-none px-6 py-2 rounded-full backdrop-blur-md font-ui font-bold uppercase tracking-widest text-xs">
+          <Badge className="mb-6 bg-[#F0F4FF]/20 text-white border-none px-6 py-2 rounded-full backdrop-blur-md font-ui font-bold uppercase tracking-widest text-xs">
             {news.kategori}
           </Badge>
           <h1 className="text-3xl md:text-5xl font-heading font-extrabold text-white max-w-4xl mx-auto leading-tight drop-shadow-lg">
@@ -38,7 +38,7 @@ export const NewsDetail: React.FC = () => {
         </div>
       </div>
 
-      <section className="py-16 bg-surface">
+      <section className="py-16 bg-[#F0F4FF]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             {/* Main Content */}
@@ -74,7 +74,7 @@ export const NewsDetail: React.FC = () => {
 
               {/* Article Body */}
               <div className="prose prose-lg max-w-none font-ui text-text-muted leading-relaxed space-y-6">
-                <p className="text-xl font-medium text-text-primary leading-relaxed italic border-l-4 border-primary pl-6 py-2 bg-surface rounded-r-2xl">
+                <p className="text-xl font-medium text-text-primary leading-relaxed italic border-l-4 border-primary pl-6 py-2 bg-[#F0F4FF] rounded-r-2xl">
                   {news.excerpt}
                 </p>
                 
@@ -90,7 +90,7 @@ export const NewsDetail: React.FC = () => {
                     <p>
                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida.
                     </p>
-                    <div className="my-12 p-8 bg-surface rounded-[40px] border border-primary/10 relative overflow-hidden">
+                    <div className="my-12 p-8 bg-[#F0F4FF] rounded-[40px] border border-primary/10 relative overflow-hidden">
                       <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
                       <h4 className="font-heading font-bold text-text-primary text-xl mb-4">Poin Utama Pembelajaran</h4>
                       <ul className="space-y-3">
@@ -118,9 +118,9 @@ export const NewsDetail: React.FC = () => {
               {/* Tags & Share */}
               <div className="mt-16 pt-8 border-t border-surface flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline" className="rounded-lg px-4 py-1 border-surface text-text-muted hover:bg-surface transition-colors cursor-pointer">#Pendidikan</Badge>
-                  <Badge variant="outline" className="rounded-lg px-4 py-1 border-surface text-text-muted hover:bg-surface transition-colors cursor-pointer">#SekolahDasar</Badge>
-                  <Badge variant="outline" className="rounded-lg px-4 py-1 border-surface text-text-muted hover:bg-surface transition-colors cursor-pointer">#Mekarsari</Badge>
+                  <Badge variant="outline" className="rounded-lg px-4 py-1 border-surface text-text-muted hover:bg-[#F0F4FF] transition-colors cursor-pointer">#Pendidikan</Badge>
+                  <Badge variant="outline" className="rounded-lg px-4 py-1 border-surface text-text-muted hover:bg-[#F0F4FF] transition-colors cursor-pointer">#SekolahDasar</Badge>
+                  <Badge variant="outline" className="rounded-lg px-4 py-1 border-surface text-text-muted hover:bg-[#F0F4FF] transition-colors cursor-pointer">#Mekarsari</Badge>
                 </div>
                 <div className="flex items-center space-x-4">
                   <span className="text-sm font-ui font-bold text-text-muted">Bagikan:</span>
@@ -143,7 +143,7 @@ export const NewsDetail: React.FC = () => {
                     <Link key={item.id} to={`/berita/${item.id}`} className="group block">
                       <Card className="border-none shadow-sm hover:shadow-md transition-all overflow-hidden rounded-2xl">
                         <CardContent className="p-4 flex space-x-4">
-                          <div className="w-20 h-20 bg-surface rounded-xl flex-shrink-0 flex items-center justify-center text-primary/20 font-bold text-xs uppercase tracking-tighter text-center p-2">
+                          <div className="w-20 h-20 bg-[#F0F4FF] rounded-xl flex-shrink-0 flex items-center justify-center text-primary/20 font-bold text-xs uppercase tracking-tighter text-center p-2">
                             {item.kategori}
                           </div>
                           <div className="flex flex-col justify-center">
@@ -161,14 +161,14 @@ export const NewsDetail: React.FC = () => {
 
               {/* Newsletter / CTA */}
               <div className="bg-primary p-8 rounded-[40px] text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-surface/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#F0F4FF]/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
                 <h3 className="text-xl font-heading font-bold mb-4">Dapatkan Update Terbaru</h3>
                 <p className="text-sm text-white/70 font-ui mb-6">Jangan lewatkan informasi penting seputar SD Negeri Mekarsari.</p>
                 <div className="space-y-3">
                   <input 
                     type="email" 
                     placeholder="Email Anda" 
-                    className="w-full bg-surface/10 border border-white/20 rounded-xl px-4 py-3 text-sm outline-none focus:bg-white/20 transition-all"
+                    className="w-full bg-[#F0F4FF]/10 border border-white/20 rounded-xl px-4 py-3 text-sm outline-none focus:bg-[#F0F4FF]/20 transition-all"
                   />
                   <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold rounded-xl py-6">
                     Berlangganan
@@ -182,5 +182,6 @@ export const NewsDetail: React.FC = () => {
     </div>
   );
 };
+
 
 
