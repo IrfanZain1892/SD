@@ -122,7 +122,7 @@ export const Profile: React.FC = () => {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-white p-10 rounded-[40px] shadow-xl"
+              className="bg-surface p-10 rounded-[40px] shadow-xl"
             >
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8">
                 <Eye className="w-8 h-8" />
@@ -139,14 +139,14 @@ export const Profile: React.FC = () => {
               viewport={{ once: true }}
               className="bg-primary p-10 rounded-[40px] shadow-xl text-white"
             >
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-white mb-8">
+              <div className="w-16 h-16 bg-surface/20 rounded-2xl flex items-center justify-center text-white mb-8">
                 <Target className="w-8 h-8" />
               </div>
               <h2 className="text-3xl font-heading font-extrabold mb-6">Misi Kami</h2>
               <ul className="space-y-4">
                 {misi.map((item, idx) => (
                   <li key={idx} className="flex items-start">
-                    <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center shrink-0 mr-3 mt-1">
+                    <div className="w-6 h-6 rounded-full bg-surface/20 flex items-center justify-center shrink-0 mr-3 mt-1">
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <span className="font-ui font-medium">{item}</span>
@@ -173,7 +173,7 @@ export const Profile: React.FC = () => {
             <div className="mb-12">
               <div className="bg-primary p-6 rounded-3xl text-white text-center shadow-xl w-64 transform hover:scale-105 transition-transform">
                 <Avatar className="w-20 h-20 mx-auto mb-4 border-4 border-white/20">
-                  <AvatarFallback className="bg-white text-primary font-bold text-xl">MS</AvatarFallback>
+                  <AvatarFallback className="bg-surface text-primary font-bold text-xl">MS</AvatarFallback>
                 </Avatar>
                 <h4 className="font-heading font-bold text-lg leading-tight">{struktur[0].name}</h4>
                 <p className="text-xs font-ui opacity-80 uppercase tracking-widest mt-1">{struktur[0].role}</p>
@@ -186,7 +186,7 @@ export const Profile: React.FC = () => {
             {/* Other Staff */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
               {struktur.slice(1).map((staff, idx) => (
-                <div key={idx} className="bg-white border border-surface p-6 rounded-3xl text-center shadow-md hover:shadow-xl transition-all group">
+                <div key={idx} className="bg-surface border border-surface p-6 rounded-3xl text-center shadow-md hover:shadow-xl transition-all group">
                   <Avatar className="w-16 h-16 mx-auto mb-4 border-2 border-surface group-hover:border-primary transition-colors">
                     <AvatarFallback className={`${staff.color} text-white font-bold`}>
                       {staff.name.substring(0, 2).toUpperCase()}
@@ -269,6 +269,7 @@ export const Profile: React.FC = () => {
     </div>
   );
 };
+
 
 
 

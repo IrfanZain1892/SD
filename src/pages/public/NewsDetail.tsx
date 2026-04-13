@@ -29,7 +29,7 @@ export const NewsDetail: React.FC = () => {
       <div className="h-[400px] md:h-[500px] w-full bg-gradient-to-br from-primary via-primary-dark to-secondary relative flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/40" />
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <Badge className="mb-6 bg-white/20 text-white border-none px-6 py-2 rounded-full backdrop-blur-md font-ui font-bold uppercase tracking-widest text-xs">
+          <Badge className="mb-6 bg-surface/20 text-white border-none px-6 py-2 rounded-full backdrop-blur-md font-ui font-bold uppercase tracking-widest text-xs">
             {news.kategori}
           </Badge>
           <h1 className="text-3xl md:text-5xl font-heading font-extrabold text-white max-w-4xl mx-auto leading-tight drop-shadow-lg">
@@ -161,14 +161,14 @@ export const NewsDetail: React.FC = () => {
 
               {/* Newsletter / CTA */}
               <div className="bg-primary p-8 rounded-[40px] text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-surface/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
                 <h3 className="text-xl font-heading font-bold mb-4">Dapatkan Update Terbaru</h3>
                 <p className="text-sm text-white/70 font-ui mb-6">Jangan lewatkan informasi penting seputar SD Negeri Mekarsari.</p>
                 <div className="space-y-3">
                   <input 
                     type="email" 
                     placeholder="Email Anda" 
-                    className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm outline-none focus:bg-white/20 transition-all"
+                    className="w-full bg-surface/10 border border-white/20 rounded-xl px-4 py-3 text-sm outline-none focus:bg-white/20 transition-all"
                   />
                   <Button className="w-full bg-accent hover:bg-accent/90 text-white font-bold rounded-xl py-6">
                     Berlangganan
@@ -182,4 +182,5 @@ export const NewsDetail: React.FC = () => {
     </div>
   );
 };
+
 

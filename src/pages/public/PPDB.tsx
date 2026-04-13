@@ -156,7 +156,7 @@ export const PPDB: React.FC = () => {
               { step: 4, title: "Pengumuman", desc: "27 Juni 2025" },
               { step: 5, title: "Daftar Ulang", desc: "30 Juni–5 Juli 2025" }
             ].map((item, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-3xl text-center shadow-sm border border-transparent hover:border-primary/20 transition-all">
+              <div key={idx} className="bg-surface p-6 rounded-3xl text-center shadow-sm border border-transparent hover:border-primary/20 transition-all">
                 <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 font-heading font-bold">
                   {item.step}
                 </div>
@@ -457,4 +457,5 @@ export const PPDB: React.FC = () => {
     </div>
   );
 };
+
 

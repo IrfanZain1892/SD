@@ -32,7 +32,7 @@ export const News: React.FC = () => {
           {/* Filters & Search */}
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 mb-12">
             <Tabs defaultValue="Semua" className="w-full lg:w-auto" onValueChange={setActiveTab}>
-              <TabsList className="bg-white p-1 rounded-2xl shadow-sm w-full lg:w-auto flex flex-wrap h-auto">
+              <TabsList className="bg-surface p-1 rounded-2xl shadow-sm w-full lg:w-auto flex flex-wrap h-auto">
                 {categories.map(cat => (
                   <TabsTrigger 
                     key={cat} 
@@ -76,7 +76,7 @@ export const News: React.FC = () => {
           {/* Pagination Simulation */}
           {filteredNews.length > 0 && (
             <div className="flex justify-center space-x-2">
-              <Button variant="outline" className="rounded-xl w-10 h-10 p-0 border-surface bg-white">1</Button>
+              <Button variant="outline" className="rounded-xl w-10 h-10 p-0 border-surface bg-surface">1</Button>
               <Button variant="ghost" className="rounded-xl w-10 h-10 p-0 text-text-muted">2</Button>
               <Button variant="ghost" className="rounded-xl w-10 h-10 p-0 text-text-muted">3</Button>
             </div>
@@ -86,3 +86,4 @@ export const News: React.FC = () => {
     </div>
   );
 };
+

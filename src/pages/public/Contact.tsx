@@ -121,12 +121,12 @@ export const Contact: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="nama">Nama Lengkap</Label>
-                    <Input id="nama" {...register('nama')} className="rounded-xl bg-white border-none shadow-sm" />
+                    <Input id="nama" {...register('nama')} className="rounded-xl bg-surface border-none shadow-sm" />
                     {errors.nama && <p className="text-xs text-danger font-ui">{errors.nama.message}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" {...register('email')} className="rounded-xl bg-white border-none shadow-sm" />
+                    <Input id="email" type="email" {...register('email')} className="rounded-xl bg-surface border-none shadow-sm" />
                     {errors.email && <p className="text-xs text-danger font-ui">{errors.email.message}</p>}
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export const Contact: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="noHp">Nomor HP</Label>
-                    <Input id="noHp" {...register('noHp')} className="rounded-xl bg-white border-none shadow-sm" />
+                    <Input id="noHp" {...register('noHp')} className="rounded-xl bg-surface border-none shadow-sm" />
                     {errors.noHp && <p className="text-xs text-danger font-ui">{errors.noHp.message}</p>}
                   </div>
                   <div className="space-y-2">
@@ -142,7 +142,7 @@ export const Contact: React.FC = () => {
                     <select 
                       id="topik" 
                       {...register('topik')} 
-                      className="w-full rounded-xl bg-white border-none shadow-sm h-10 px-3 text-sm font-ui focus:ring-2 focus:ring-primary outline-none"
+                      className="w-full rounded-xl bg-surface border-none shadow-sm h-10 px-3 text-sm font-ui focus:ring-2 focus:ring-primary outline-none"
                     >
                       <option value="">Pilih Topik</option>
                       <option value="PPDB">Pertanyaan PPDB</option>
@@ -156,11 +156,11 @@ export const Contact: React.FC = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="pesan">Pesan Anda</Label>
-                  <Textarea id="pesan" {...register('pesan')} rows={5} className="rounded-xl bg-white border-none shadow-sm" />
+                  <Textarea id="pesan" {...register('pesan')} rows={5} className="rounded-xl bg-surface border-none shadow-sm" />
                   {errors.pesan && <p className="text-xs text-danger font-ui">{errors.pesan.message}</p>}
                 </div>
 
-                <div className="p-6 bg-white rounded-2xl shadow-sm border border-primary/10">
+                <div className="p-6 bg-surface rounded-2xl shadow-sm border border-primary/10">
                   <Label htmlFor="captcha" className="block mb-3">Keamanan: Berapa hasil dari 3 + 4?</Label>
                   <Input id="captcha" {...register('captcha')} placeholder="Jawab dengan angka" className="rounded-xl border-surface" />
                   {errors.captcha && <p className="text-xs text-danger font-ui mt-2">{errors.captcha.message}</p>}
@@ -222,10 +222,10 @@ export const Contact: React.FC = () => {
               </div>
 
               <div className="p-8 bg-primary rounded-[40px] text-white relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-surface/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
                 <h3 className="text-xl font-heading font-bold mb-2">Butuh Bantuan Cepat?</h3>
                 <p className="text-sm text-white/70 font-ui mb-6">Hubungi WhatsApp Tata Usaha kami untuk respon yang lebih cepat.</p>
-                <Button className="bg-white text-primary hover:bg-white/90 rounded-xl px-8 font-bold">
+                <Button className="bg-surface text-primary hover:bg-white/90 rounded-xl px-8 font-bold">
                   WhatsApp Kami
                 </Button>
               </div>
@@ -237,7 +237,7 @@ export const Contact: React.FC = () => {
       {/* Map Section */}
       <section className="h-[400px] bg-surface relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-green-500/10 flex flex-col items-center justify-center text-center p-8">
-          <div className="w-16 h-16 bg-white rounded-3xl shadow-2xl flex items-center justify-center text-primary mb-6 animate-bounce">
+          <div className="w-16 h-16 bg-surface rounded-3xl shadow-2xl flex items-center justify-center text-primary mb-6 animate-bounce">
             <MapPin className="w-8 h-8" />
           </div>
           <h3 className="text-2xl font-heading font-bold text-text-primary mb-2">Lokasi SD Negeri Mekarsari</h3>
@@ -250,4 +250,5 @@ export const Contact: React.FC = () => {
     </div>
   );
 };
+
 

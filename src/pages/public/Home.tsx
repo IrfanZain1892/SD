@@ -100,7 +100,7 @@ export const Home: React.FC = () => {
                   <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white font-ui font-bold px-8 py-7 rounded-2xl text-lg shadow-xl transform hover:scale-105 transition-all">
                     <Link to={slides[currentSlide].link}>{slides[currentSlide].cta}</Link>
                   </Button>
-                  <Button asChild size="lg" variant="outline" className="bg-white/10 border-white/40 text-white hover:bg-white/20 font-ui font-bold px-8 py-7 rounded-2xl text-lg backdrop-blur-sm">
+                  <Button asChild size="lg" variant="outline" className="bg-surface/10 border-white/40 text-white hover:bg-white/20 font-ui font-bold px-8 py-7 rounded-2xl text-lg backdrop-blur-sm">
                     <Link to="/profil">Tentang Kami</Link>
                   </Button>
                 </div>
@@ -123,10 +123,10 @@ export const Home: React.FC = () => {
         </div>
 
         {/* Nav Buttons */}
-        <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-md transition-all">
+        <button onClick={prevSlide} className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-surface/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-md transition-all">
           <ChevronLeft className="w-6 h-6" />
         </button>
-        <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-md transition-all">
+        <button onClick={nextSlide} className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-surface/10 hover:bg-white/20 text-white flex items-center justify-center backdrop-blur-md transition-all">
           <ChevronRight className="w-6 h-6" />
         </button>
       </section>
@@ -172,7 +172,7 @@ export const Home: React.FC = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-white overflow-hidden">
+      <section className="py-24 bg-surface overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -229,7 +229,7 @@ export const Home: React.FC = () => {
                   <circle cx="250" cy="150" r="30" fill="currentColor" />
                 </svg>
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-2xl flex items-center space-x-4 border border-surface">
+              <div className="absolute -bottom-6 -left-6 bg-surface p-6 rounded-3xl shadow-2xl flex items-center space-x-4 border border-surface">
                 <div className="w-12 h-12 bg-accent rounded-2xl flex items-center justify-center text-white">
                   <Star className="w-6 h-6 fill-current" />
                 </div>
@@ -292,7 +292,7 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {ekskulData.map((ekskul, idx) => (
-              <div key={idx} className="p-6 bg-surface rounded-3xl border border-transparent hover:border-primary/20 hover:bg-white hover:shadow-xl transition-all duration-300 group text-center">
+              <div key={idx} className="p-6 bg-surface rounded-3xl border border-transparent hover:border-primary/20 hover:bg-surface hover:shadow-xl transition-all duration-300 group text-center">
                 <div className="text-4xl mb-4 transform group-hover:scale-110 transition-transform">{ekskul.ikon}</div>
                 <h3 className="font-heading font-bold text-text-primary mb-1">{ekskul.nama}</h3>
                 <p className="text-xs text-text-muted font-ui">{ekskul.jadwal}</p>
@@ -317,7 +317,7 @@ export const Home: React.FC = () => {
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <Badge className="bg-white/10 text-white border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
+            <Badge className="bg-surface/10 text-white border-none mb-3 px-4 py-1 rounded-full font-ui font-bold uppercase tracking-widest text-[10px]">
               Testimoni
             </Badge>
             <h2 className="text-3xl md:text-4xl font-heading font-extrabold text-white mb-4">
@@ -327,7 +327,7 @@ export const Home: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimoniData.map((item, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-[32px] shadow-2xl relative">
+              <div key={idx} className="bg-surface p-8 rounded-[32px] shadow-2xl relative">
                 <div className="absolute -top-4 -right-4 w-12 h-12 bg-accent rounded-2xl flex items-center justify-center text-white shadow-lg">
                   <Star className="w-6 h-6 fill-current" />
                 </div>
@@ -380,7 +380,7 @@ export const Home: React.FC = () => {
                 { label: 'Detik', value: '30' }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center">
-                  <div className="w-16 h-16 md:w-24 md:h-24 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-white text-2xl md:text-4xl font-heading font-bold border border-white/20 mb-2">
+                  <div className="w-16 h-16 md:w-24 md:h-24 bg-surface/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-white text-2xl md:text-4xl font-heading font-bold border border-white/20 mb-2">
                     {item.value}
                   </div>
                   <span className="text-xs md:text-sm font-ui font-bold text-white/70 uppercase tracking-widest">{item.label}</span>
@@ -392,7 +392,7 @@ export const Home: React.FC = () => {
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white font-ui font-bold px-10 py-8 rounded-2xl text-xl shadow-2xl transform hover:scale-105 transition-all">
                 <Link to="/ppdb">Daftar Online Sekarang</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 font-ui font-bold px-10 py-8 rounded-2xl text-xl backdrop-blur-sm">
+              <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-surface/10 font-ui font-bold px-10 py-8 rounded-2xl text-xl backdrop-blur-sm">
                 <Link to="/kontak" className="flex items-center">
                   <Phone className="w-6 h-6 mr-3" />
                   Hubungi Kami
@@ -405,4 +405,5 @@ export const Home: React.FC = () => {
     </div>
   );
 };
+
 
